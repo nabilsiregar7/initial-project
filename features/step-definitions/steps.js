@@ -42,8 +42,3 @@ When(/^I input kabupaten (\w+)$/, async (cityAndProvince) => {
 When(/^I click button daftar $/, async (firstName) => {
     await RegisterPage.btnDaftar.click()
 });
-
-Then(/^I should see a flash message saying (.*)$/, async (message) => {
-    await expect(SecurePage.flashAlert).toBeExisting();
-    await expect(SecurePage.flashAlert).toHaveTextContaining(message);
-});
