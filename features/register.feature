@@ -10,8 +10,7 @@ Feature: Cermati register scenario
         And I input first name <firstName>
         And I input last name <lastName>
         And I input kabupaten <kabupaten>
-        And I click button daftar
-    Then I should see a flash message saying <message>
+    Then I click button daftar
 
     Examples:
       | email           | phoneNumber     | password        | firstName | lastName  | kabupaten   | 

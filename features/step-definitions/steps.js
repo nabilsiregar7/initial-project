@@ -34,11 +34,11 @@ When(/^I input last name (\w+)$/, async (lastName) => {
     await RegisterPage.inputLastName.setValue(lastName)
 });
 
-When(/^I input kabupaten (\w+)$/, async (cityAndProvince) => {
+When(/^I input kabupaten (\w+)$/, async (kabupaten) => {
     await RegisterPage.inputCityProvince.click()
-    await RegisterPage.inputCityProvince.setValue(cityAndProvince)
+    await RegisterPage.inputCityProvince.setValue(kabupaten)
 });
 
-When(/^I click button daftar $/, async (firstName) => {
+Then(/^I click button daftar $/, async (firstName) => {
     await RegisterPage.btnDaftar.click()
 });
